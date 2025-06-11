@@ -3,7 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Product - Bayu</title>
+  <title>Bayu | Product</title>
+
+  <!-- 🌟 Font Disney-style -->
+  <link href="https://fonts.googleapis.com/css2?family=Princess+Sofia&display=swap" rel="stylesheet">
+
   <style>
     * {
       margin: 0;
@@ -55,16 +59,19 @@
     }
 
     h1 {
+      font-family: 'Princess Sofia', cursive;
+      font-size: 4em;
+      font-weight: bold;
       text-align: center;
-      font-size: 2.8em;
-      color: #003366;
-      margin-top: 30px;
-      animation: slideDown 1s ease;
+      margin: 60px 0 30px;
+      color: #00BFFF;
+      text-shadow: 0 0 15px rgba(0, 191, 255, 0.9);
+      animation: glowPulse 2s infinite alternate;
     }
 
-    @keyframes slideDown {
-      from { transform: translateY(-30px); opacity: 0; }
-      to { transform: translateY(0); opacity: 1; }
+    @keyframes glowPulse {
+      from { text-shadow: 0 0 15px rgba(0, 191, 255, 0.9); }
+      to   { text-shadow: 0 0 30px rgba(0, 191, 255, 1); }
     }
 
     marquee {
@@ -102,13 +109,16 @@
   <ul>
     <li><a href="index.html">Home</a></li>
     <li><a href="about.html">Design</a></li>
-    <li>Product</li>
+    <li><a href="contact.html">Product</a></li>
   </ul>
 
-  <h1>Product</h1>
+  <!-- ✨ Judul Estetik & Glowing -->
+  <h1>Product Rekomendasi Lagu 🎧✨💙</h1>
 
-  <marquee>🎵 Music Recommendation 🎶</marquee>
+  <!-- 🟦 Tulisan Bergerak -->
+  <marquee>🎵 Music Recommendation Just for You 🎶💫</marquee>
 
+  <!-- 🎧 Iframe Tetap -->
   <div class="iframe-container">
     <iframe src="https://49f584b57e2b6cda74.gradio.live" allowfullscreen></iframe>
   </div>
@@ -116,4 +126,7 @@
 </body>
 </html>
 
+
    
+      
+
