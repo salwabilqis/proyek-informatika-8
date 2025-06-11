@@ -64,3 +64,14 @@ marquee {
     font-size: 1.2em;
     font-weight: bold;
 }
+.moving-text {
+    animation: moveText 10s linear infinite;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+@keyframes moveText {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
