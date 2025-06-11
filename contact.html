@@ -1,36 +1,108 @@
 <!DOCTYPE html>
- <html lang="en">
-   <head>
-       <meta charset="UTF-8" />
-           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-               <title>Document</title>
-                   <link rel="stylesheet" href="style.css" />
-                       <title>bayu</title>
-                         </head>
-                           <body>
-                              
-                                 <ul>
-                                       <li><a href="index.html">home</a></li>
-                                               <li><a href="about.html">design</a></li>
-                                             <li>product</li>
-                                                </ul>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product - Bayu</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 18px;
+      margin: 0;
+      padding: 0;
+      background: #e6f0ff;
+      animation: fadeIn 1s ease;
+    }
 
-                                                    <!---judul---->
-                                                       <h1>product</h1>
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
 
-                                                           <!---tulisan bergerak--->
-                                                              <marquee>music rekomendation
-                                                               
-                                                          
-                                                            </marquee>  
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      background-color: #004080;
+      overflow: hidden;
+      text-align: center;
+    }
 
-                             
-                             <iframe src="https://49f584b57e2b6cda74.gradio.live"allow="fullscreen></iframe>
+    ul li {
+      display: inline-block;
+    }
 
-                              <p style="text-align: center; margin-top: 20px;">
-                              
+    ul li a, ul li {
+      color: white;
+      text-decoration: none;
+      padding: 16px 20px;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+    }
 
-                              
-                              
-                    
-                                                                           
+    ul li a:hover {
+      background-color: #0066cc;
+      border-radius: 5px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.8em;
+      color: #003366;
+      margin-top: 30px;
+      animation: slideDown 1s ease;
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    marquee {
+      font-size: 1.6em;
+      color: #003366;
+      margin: 20px auto;
+      display: block;
+      text-align: center;
+    }
+
+    .iframe-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+      animation: zoomIn 1.2s ease;
+    }
+
+    @keyframes zoomIn {
+      from { transform: scale(0.9); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    iframe {
+      width: 90%;
+      max-width: 1000px;
+      height: 600px;
+      border: 2px solid #0066cc;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">Design</a></li>
+    <li>Product</li>
+  </ul>
+
+  <h1>Product</h1>
+
+  <marquee>🎵 Music Recommendation 🎶</marquee>
+
+  <div class="iframe-container">
+    <iframe src="https://49f584b57e2b6cda74.gradio.live" allowfullscreen></iframe>
+  </div>
+
+</body>
+</html>
